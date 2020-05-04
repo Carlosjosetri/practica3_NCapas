@@ -8,6 +8,7 @@ public class Student {
 	private Boolean estado;
 	
 	
+	public Student() {}
 	
 	
 	public Student(String nombre, String apellido, String fentrada, String carrera, Boolean estado) {
@@ -49,4 +50,7 @@ public class Student {
 		this.estado = estado;
 	}
 	
+	public String Delegate() {
+		return estado ? "Activo":"Inactivo";
+	}
 }
